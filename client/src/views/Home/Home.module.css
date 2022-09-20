@@ -1,9 +1,12 @@
 body{
+ /* display: flex; */
  /* display: inline-block; */
- position: relative;
+ width:100%;    
+ /* position: relative; */
 }
 
 .image-container{
+    /* flex:1; */
     position: absolute; 
      /* flex-direction: row; */
 }
@@ -13,6 +16,7 @@ body{
 }
 
 .text-container{
+    flex:1;
     position: absolute;
     /* flex-direction: row; */
     width: 20%;
@@ -21,9 +25,11 @@ body{
 }
 
 .text{
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: center;
-    line-height: 50px;
+    /* line-height: 50px; */
+    font-size: 2vw;
+    font-weight: bold;
 }
 
 .fade-in {
@@ -41,4 +47,25 @@ body{
 	100% {
 		opacity: 1;
 	}
+}
+
+@media screen and (max-width:640px){
+    .img{
+        width: 80vw;
+    }
+    .image-container{
+        position: static;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .text-container{
+        position:static;
+        width: 50%;
+        margin: auto;
+    }
+
+    .text{
+        font-size: 3vw;
+    }
 }
