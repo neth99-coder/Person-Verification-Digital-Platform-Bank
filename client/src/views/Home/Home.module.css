@@ -1,0 +1,44 @@
+body{
+ /* display: inline-block; */
+ position: relative;
+}
+
+.image-container{
+    position: absolute; 
+     /* flex-direction: row; */
+}
+.img{
+    height: 40%;
+    width: 60%;
+}
+
+.text-container{
+    position: absolute;
+    /* flex-direction: row; */
+    width: 20%;
+    margin-left: 68%;
+    margin-top: 8%;
+}
+
+.text{
+    letter-spacing: 3px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
