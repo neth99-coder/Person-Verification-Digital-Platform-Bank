@@ -1,0 +1,42 @@
+.container{
+    height: 50vh;
+    width: 65%;
+    background-color:rgba(144, 143, 143, 0.2);
+    margin: 15vh auto;
+    display: flex;
+    
+}
+
+.image{
+    height: inherit;
+    width: 50%;
+    flex: 1;
+}
+
+.text-container{
+    height: inherit;
+    width: 50%;
+    flex: 1;
+    position: relative;
+    margin-top: 7%;
+}
+
+.text{
+    font-size: 3vh;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.btn-container{
+    height: 30%;
+    width: 80%;
+    margin: 5vh auto;
+    display: flex;
+  
+}
+
+.btn{
+    flex: 1;
+    height: 35%;
+    margin: 5px;
+}
