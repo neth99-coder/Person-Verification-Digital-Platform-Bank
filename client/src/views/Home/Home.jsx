@@ -6,14 +6,14 @@ const Home = () => {
   return (
     <div className={`${Styles["body"]}`}>
       <div className={`${Styles["image-container"]}`}>
-        <img src={homeImage} alt="home-page" className={`${Styles["img"]}`} />
+        <img src={homeImage} alt="home-page" className={`${Styles["img"]}`}/>
       </div>
 
       <div className={`${Styles["text-container"]}`}>
-        <h2 className={`${Styles["text"]} text-primary ${Styles["fade-in"]}`}>
+        <p className={`${Styles["text"]} text-primary ${Styles["fade-in"]}`}>
           A Basic Banking Web Application for Demostration Purpose of Person
           Verification Digital Platform Project
-        </h2>
+        </p>
       </div>
     </div>
   );

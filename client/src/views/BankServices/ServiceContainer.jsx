@@ -12,7 +12,7 @@ const ServiceContainer = (props) => {
         </p>
         <div className={`${Styles["btn-container"]} `}>
         <button type="button" className={`${Styles['btn']} btn btn-outline-primary`}>Make a reservation</button>
-        <button type="button" className={`${Styles['btn']} btn btn-outline-primary`} onClick={()=>{props.handleClick()}}>Verify using DID</button>
+        <button type="button" className={`${Styles['btn']} btn btn-outline-primary`} onClick={()=>{props.handleClick( )}}>Verify using DID</button>
         </div>
       </div>
     </div>

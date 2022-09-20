@@ -24,7 +24,7 @@
 .text{
     font-size: 3vh;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 2.3px;
 }
 
 .btn-container{
@@ -37,6 +37,74 @@
 
 .btn{
     flex: 1;
-    height: 35%;
+    height: 5.5vh;
     margin: 5px;
+    font-size: 1.8vh;
+}
+
+@media screen and (max-width:1030px){
+    .container{
+        width: 75%;
+        height: 30vh;
+    }
+    .btn{
+        height: 5vh;
+        margin: 5px;
+        font-size: 1.3vh;
+    }
+
+    .text{
+        margin-top: 20px;
+        font-size: 2vw;
+    }
+
+    
+}
+
+@media screen and (max-width:770px){
+    .btn{
+        height: 6vh;
+        margin: 5px;
+        font-size: 1.5vh;
+    }   
+
+    .container{
+        height: 40vh;
+    }
+   
+}
+
+@media screen and (max-width:700px){
+    .image{
+        display: none;
+    }
+
+    .text{
+        margin-top: 55px;
+        font-size: 2vh;
+    }
+
+    .btn-container{
+        margin-top: 50px;
+    }
+
+    .text-container{
+        margin: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:415px){
+    .text-container{
+        margin: 10px;
+    }
+
+    .btn{
+        font-size: 1.6vh;
+    }
+
+    .container{
+        height:45vh
+    }
 }
