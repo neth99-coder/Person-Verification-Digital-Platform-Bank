@@ -2,9 +2,10 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "../views/Home/Home";
 import Header from "../components/Header";
-import CreateAccount from '../views/BankServices/CreateAccount/CreateAccount';
-import CardRequest from '../views/BankServices/CardRequest/CardRequest';
-import LoanRequest from '../views/BankServices/LoanRequest/LoanRequest';
+import CreateAccount from "../views/BankServices/CreateAccount/CreateAccount";
+import CardRequest from "../views/BankServices/CardRequest/CardRequest";
+import LoanRequest from "../views/BankServices/LoanRequest/LoanRequest";
+import QR from "../views/QRScan/QR";
 
 export default function AppRouter() {
   return (
@@ -18,6 +19,7 @@ export default function AppRouter() {
             <Route path="loan-request" element={<LoanRequest />} />
             <Route path="card-request" element={<CardRequest />} />
           </Route>
+          <Route path="qr-scan/:id" element={<QR />} />
           <Route path="blogs" element={<Home />} />
         </Route>
       </Routes>
